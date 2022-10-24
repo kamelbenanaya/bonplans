@@ -1,16 +1,20 @@
 import React from "react";
 import Users from "./users/pages/Users";
-import Places from "./places/pages/Places";
+import NewPlace from "./places/pages/NewPlace";
+import MainNavigation from "./shared/components/Navigation/MainNavigation";
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 function App() {
   return (
     <div>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Users />} />
-          <Route path="/Places" element={<Places />} />
-        </Routes>
+        <MainNavigation />
+        <main>
+          <Routes>
+            <Route path="/" element={<Users />} />
+            <Route path="/places/new" element={<NewPlace />} />
+          </Routes>
+        </main>
       </BrowserRouter>
     </div>
   );
