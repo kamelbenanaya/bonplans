@@ -11,8 +11,8 @@ function App() {
         <MainNavigation />
         <main>
           <Routes>
-            <Route path="/" element={<Users />} />
-            <Route path="/places/new" element={<NewPlace />} />
+            <Route path="/" element={<Users />} exact />
+            <Route path="/places/new" element={<NewPlace />}  exact/>
           </Routes>
         </main>
       </BrowserRouter>
