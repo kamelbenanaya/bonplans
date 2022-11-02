@@ -76,7 +76,7 @@ const UpdatePlace = () => {
         element="input"
         type="text"
         label="Title"
-        validator={[VALIDATOR_REQUIRE()]}
+        validators={[VALIDATOR_REQUIRE()]}
         errorText="Please enter a valid Title"
         onInput={inputHandler}
         initialValue={formState.inputs.title.value}
@@ -87,7 +87,7 @@ const UpdatePlace = () => {
         element="textarea"
         type="text"
         label="Description"
-        validator={[VALIDATOR_MINLENGTH(5)]}
+        validators={[VALIDATOR_MINLENGTH(5)]}
         errorText="Please enter a valid Description (min 5 characters)."
         onInput={inputHandler}
         initialValue={formState.inputs.description.value}
