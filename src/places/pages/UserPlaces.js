@@ -14,12 +14,11 @@ const DUMMY_PLACES = [
       lat: 32.4655797,
       lng: -68.01407533,
     },
-
     creator: "u1",
   },
   {
     id: "p2",
-    title: "Empire State Building",
+    title: "Borj Khalifa",
     description: "One of the most famous sky scrapers in the world !",
     imageUrl:
       "https://cdn.britannica.com/73/114973-050-2DC46083/Midtown-Manhattan-Empire-State-Building-New-York.jpg",
@@ -28,7 +27,6 @@ const DUMMY_PLACES = [
       lat: 32.4655797,
       lng: -68.01407533,
     },
-
     creator: "u2",
   },
 ];
