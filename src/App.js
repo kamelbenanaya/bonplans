@@ -4,6 +4,7 @@ import NewPlace from "./places/pages/NewPlace";
 import MainNavigation from "./shared/components/Navigation/MainNavigation";
 import UserPlaces from "./places/pages/UserPlaces";
 import UpdatePlace from "./places/pages/UpdatePlace";
+import Auth from "./users/pages/Auth";
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path="/places/new" element={<NewPlace />} exact />
             <Route path="/:userId/places" element={<UserPlaces />} exact />
             <Route path="/places/:placeid" element={<UpdatePlace />} exact />
+            <Route path="/auth" element={<Auth />} exact />
           </Routes>
         </main>
       </BrowserRouter>
